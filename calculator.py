@@ -54,7 +54,7 @@ for button in buttons:
         btn = ctk.CTkButton(app, text=button, command=clear_display, width=65, height=65, 
                             font=("Arial", 24), fg_color="#B22222", hover_color="#CD5C5C")
     else:
-        btn = ctk.CTkButton(app, text=button, command=lambda: add_to_expression(button), 
+        btn = ctk.CTkButton(app, text=button, command=lambda b=button: add_to_expression(button), 
                             width=65, height=65, font=("Arial", 24))
 
     btn.grid(row=row_val, column=col_val, padx=5, pady=5)
