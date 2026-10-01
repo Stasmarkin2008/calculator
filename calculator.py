@@ -27,7 +27,7 @@ def clear_display():
 def calculate():
     global expression
     try:
-        result = str(eval(excpression))
+        result = str(eval(expression))
         display.delete(0, 'end')
         display.insert(0, result)
         expression = result
