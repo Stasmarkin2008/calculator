@@ -14,6 +14,7 @@ display.grid(row=0, column=0, columnspan=4, padx=10, pady=20, sticky="ew")
 expression = ""
 
 def add_to_expression(symbol):
+    global expression
     expression = expression + str(symbol)
     display.delete(0, 'end')
     display.insert(0, expression)
